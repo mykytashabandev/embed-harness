@@ -1,1 +1,268 @@
-<title>shop</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northwind Goods — Everyday objects, made well</title>
+    <meta
+      name="description"
+      content="Fixture host page: a small shop with a hero, product grid, and newsletter form."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><rect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%232f4a3c%22/></svg>"
+    />
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">Northwind Goods</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#new">New</a>
+        <a href="#products">Shop</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" aria-label="Search">⌕</button>
+        <button class="icon-button" type="button" aria-label="Cart, 0 items">Cart (0)</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="new">
+        <img
+          class="hero-image"
+          src="/img/hero.jpg"
+          width="2400"
+          height="1350"
+          alt="Autumn collection: a wooden table with ceramics and linen"
+          fetchpriority="high"
+        />
+        <div class="hero-copy">
+          <p class="eyebrow">Autumn 2026</p>
+          <h1>Objects for slow mornings</h1>
+          <p>Ceramics, linen and oak. Made in small batches, shipped from one warehouse.</p>
+          <a class="button" href="#products">Shop the collection</a>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="section-head">
+          <h2>Bestsellers</h2>
+          <p>Twelve things people keep coming back for.</p>
+        </div>
+        <ul class="grid">
+          <li class="card">
+            <a href="#product-1">
+              <img
+                src="/img/product-1.jpg"
+                width="480"
+                height="480"
+                alt="Stoneware mug, matte grey"
+              />
+              <h3>Stoneware mug</h3>
+              <p class="price">$24</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-2">
+              <img src="/img/product-2.jpg" width="480" height="480" alt="Linen apron, natural" />
+              <h3>Linen apron</h3>
+              <p class="price">$58</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-3">
+              <img src="/img/product-3.jpg" width="480" height="480" alt="Oak serving board" />
+              <h3>Oak serving board</h3>
+              <p class="price">$42</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-4">
+              <img
+                src="/img/product-4.jpg"
+                width="480"
+                height="480"
+                alt="Pour-over kettle, steel"
+              />
+              <h3>Pour-over kettle</h3>
+              <p class="price">$89</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-5">
+              <img src="/img/product-5.jpg" width="480" height="480" alt="Wool throw, oatmeal" />
+              <h3>Wool throw</h3>
+              <p class="price">$120</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-6">
+              <img src="/img/product-6.jpg" width="480" height="480" alt="Ceramic planter, sand" />
+              <h3>Ceramic planter</h3>
+              <p class="price">$36</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-7">
+              <img src="/img/product-7.jpg" width="480" height="480" alt="Brass desk lamp" />
+              <h3>Brass desk lamp</h3>
+              <p class="price">$145</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-8">
+              <img
+                src="/img/product-8.jpg"
+                width="480"
+                height="480"
+                alt="Cotton tea towels, set of three"
+              />
+              <h3>Tea towels, set of 3</h3>
+              <p class="price">$28</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-9">
+              <img
+                src="/img/product-9.jpg"
+                width="480"
+                height="480"
+                alt="Glass carafe with cork stopper"
+              />
+              <h3>Glass carafe</h3>
+              <p class="price">$32</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-10">
+              <img src="/img/product-10.jpg" width="480" height="480" alt="Leather coasters, tan" />
+              <h3>Leather coasters</h3>
+              <p class="price">$22</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-11">
+              <img src="/img/product-11.jpg" width="480" height="480" alt="Walnut salt cellar" />
+              <h3>Walnut salt cellar</h3>
+              <p class="price">$30</p>
+            </a>
+          </li>
+          <li class="card">
+            <a href="#product-12">
+              <img src="/img/product-12.jpg" width="480" height="480" alt="Enamel candle holder" />
+              <h3>Enamel candle holder</h3>
+              <p class="price">$26</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="promo">
+        <img
+          src="/img/promo.jpg"
+          width="1600"
+          height="700"
+          alt="Linen collection on a sunlit bed"
+        />
+        <div class="promo-copy">
+          <h2>Linen, washed twice</h2>
+          <p>Softer on day one. Free shipping over $75.</p>
+          <a class="button button-light" href="#products">See linen</a>
+        </div>
+      </section>
+
+      <section class="lookbook" id="lookbook">
+        <div class="section-head">
+          <h2>Lookbook</h2>
+          <p>Three rooms, furnished entirely from the shop.</p>
+        </div>
+        <div class="lookbook-row">
+          <figure>
+            <img
+              src="/img/look1.jpg"
+              width="800"
+              height="533"
+              alt="Kitchen corner with open shelving"
+            />
+            <figcaption>Kitchen</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/img/look2.jpg"
+              width="800"
+              height="533"
+              alt="Reading nook with a wool throw"
+            />
+            <figcaption>Reading nook</figcaption>
+          </figure>
+          <figure>
+            <img src="/img/look3.jpg" width="800" height="533" alt="Desk with a brass lamp" />
+            <figcaption>Desk</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="newsletter" id="about">
+        <div class="newsletter-inner">
+          <h2>One email a month</h2>
+          <p>New arrivals, restocks, and the occasional discount. No spam, unsubscribe anytime.</p>
+          <form class="newsletter-form" action="/subscribe" method="post">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+              autocomplete="email"
+            />
+            <button class="button" type="submit">Subscribe</button>
+          </form>
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            I agree to receive marketing emails.
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-cols">
+        <div>
+          <h4>Shop</h4>
+          <a href="#products">All products</a>
+          <a href="#products">Kitchen</a>
+          <a href="#products">Textiles</a>
+          <a href="#products">Lighting</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Stockists</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2026 Northwind Goods. Fixture page for embed-harness; nothing here is for sale.
+      </p>
+    </footer>
+  </body>
+</html>
