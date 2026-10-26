@@ -5,7 +5,15 @@ does this third-party script do to a host page? Input: a script URL
 or local bundle, plus a host-page fixture. It loads the page with and
 without the script, many times, and reports the delta.
 
-**Status: 1.1 skeleton.** The CLI serves a fixture, opens it in headless Chromium and prints the page title. Metrics, tracing and script injection come next.
+**Status: 1.2 observers.** The CLI serves a fixture, opens it in headless Chromium with page-side `PerformanceObserver`s installed before navigation, and prints LCP, CLS (session windows, worst-window shifts with sources) and long-task count. Tracing and script injection come next.
+
+```
+Fixture     shop
+Title       Northwind Goods — Everyday objects, made well
+LCP         96 ms  IMG[src=http://localhost:4100/img/hero.jpg]
+CLS         0.000
+Long tasks  0 (0 ms)
+```
 
 ## Run
 
